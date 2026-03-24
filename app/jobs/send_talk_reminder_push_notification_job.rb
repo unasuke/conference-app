@@ -1,5 +1,6 @@
 class SendTalkReminderPushNotificationJob < ApplicationJob
   include Rails.application.routes.url_helpers # steep:ignore
+
   queue_as :default
 
   def perform(*args)
